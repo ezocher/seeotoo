@@ -25,6 +25,9 @@ ExportedObj/
 *.pdb
 *.opendb
 
+# Unity Build generated files for HoloLens
+[Aa]pp/
+
 # Unity3D generated meta files
 *.pidb.meta
 *.pdb.meta
