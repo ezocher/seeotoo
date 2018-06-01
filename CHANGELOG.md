@@ -1,9 +1,13 @@
 # Roadmap
 
+## Next
 - [ ] Play start of narration
 - [ ] "reset", "restart", "quit" voice commands
 - [ ] Nitrogen and oxygen cubes
 - [ ] 
+
+## Backlog
+- [ ] Remove unneeded assets and code that came from Origami app
 
 
 # Changelog
