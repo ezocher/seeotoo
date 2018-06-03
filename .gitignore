@@ -25,7 +25,10 @@ ExportedObj/
 *.pdb
 *.opendb
 
-# Unity Build generated files for HoloLens
+# Windows symlinks
+*.lnk
+
+# Unity3D generated files for HoloLens
 [Aa]pp/
 
 # Unity3D generated meta files

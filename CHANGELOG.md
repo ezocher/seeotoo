@@ -2,12 +2,15 @@
 
 ## Next
 - [ ] Play start of narration
+- [ ] "next", "back" voice commands
+- [ ] CO2 cube
+- [ ] CO2 cubes from burning 1 gallon of gasoline
 - [ ] "reset", "restart", "quit" voice commands
 - [ ] Nitrogen and oxygen cubes
 - [ ] 
 
 ## Backlog
-- [ ] Remove unneeded assets and code that came from Origami app
+- [ ] Remove unused assets and code that came from Origami app
 
 
 # Changelog
