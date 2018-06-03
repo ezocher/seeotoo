@@ -11,4 +11,4 @@ This is a new project, started in May 2018. The first milestone is to get a basi
 See the [changelog](CHANGELOG.md) for current status and roadmap.
 
 ## Storyboards
-The Storyboards directory contains a very preliminary storyboard for the first experience being prototyped.
+See the [first storyboard](Storyboards/storyboard001.md) for a very preliminary description and design of the first experience being prototyped.
