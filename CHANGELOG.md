@@ -1,10 +1,10 @@
 # Roadmap
 
 ## Next
-- [ ] Play start of narration
 - [ ] "next", "back" voice commands
-- [ ] CO2 cube
-- [ ] CO2 cubes from burning 1 gallon of gasoline
+- [ ] CO2 box
+- [ ] CO2 165 cubes from burning 1 gallon of gasoline
+- [ ] Play start of narration
 - [ ] "reset", "restart", "quit" voice commands
 - [ ] Nitrogen and oxygen cubes
 - [ ] 
