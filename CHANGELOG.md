@@ -1,9 +1,9 @@
 # Roadmap
 
 ## Next
-- [ ] "next", "back" voice commands
-- [ ] CO2 box
+- [x] CO2 boxes: 407, 280, 185 ppm
 - [ ] CO2 165 cubes from burning 1 gallon of gasoline
+- [ ] "next", "back" voice commands (StepManager and show/hide objects)
 - [ ] Play start of narration
 - [ ] "reset", "restart", "quit" voice commands
 - [ ] Nitrogen and oxygen cubes
