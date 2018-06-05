@@ -43,7 +43,7 @@ public class SpeechManager : MonoBehaviour
 
         keywords.Add("Start", () =>
         {
-            this.BroadcastMessage("OnReset");
+            this.BroadcastMessage("OnRestart");
         });
 
         keywords.Add("Quit", () =>

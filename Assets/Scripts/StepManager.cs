@@ -14,18 +14,39 @@ public class StepManager : MonoBehaviour
 
     private const int firstStep = 1;
     private const int lastStep = 5;
-    private int currentStep;
+    private const int exclusiveStep = 5;
+    private int currentStep = 1;
 
-    // Runs before all Start() methods
-    void Awake()
+    private GameObject[] stepObjects;
+
+    // NOTE: Step1 is always showing, never hide it
+
+    // Awake Runs before all Start() methods
+    void Start()
     {
-        OnRestart();
+        // Save and hide game objects for all steps (except Step 1)
+        stepObjects = new GameObject[lastStep + 1];
+
+        GameObject[] taggedObjects;
+        for (int i = firstStep + 1; i <= lastStep; i++)
+        {
+            taggedObjects = GameObject.FindGameObjectsWithTag("Step" + i.ToString());
+
+            if (taggedObjects.Length > 0)
+            {
+                stepObjects[i] = taggedObjects[0];
+                stepObjects[i].SetActive(false);
+            }
+        }
+
+        currentStep = firstStep;
+        SetToCurrentStep(false);
     }
 
     void OnRestart()
     {
         currentStep = firstStep;
-        SetToCurrentStep();
+        SetToCurrentStep(true);
     }
 
     void OnStepForward()
@@ -36,7 +57,7 @@ public class StepManager : MonoBehaviour
         if (currentStep > lastStep)
             currentStep = firstStep;
 
-        SetToCurrentStep();
+        SetToCurrentStep(true);
     }
 
     void OnStepBack()
@@ -48,7 +69,7 @@ public class StepManager : MonoBehaviour
             currentStep = firstStep;
         else
         {
-            SetToCurrentStep();
+            SetToCurrentStep(true);
         }
     }
     
@@ -58,26 +79,24 @@ public class StepManager : MonoBehaviour
         Application.Quit();
     }
 
-    void SetToCurrentStep()
+    void SetToCurrentStep(bool hideAll)
     {
-        // hide everything that's cleared every step
-        GameObject[] gameObjectsToHide;
-
-        gameObjectsToHide = GameObject.FindGameObjectsWithTag("Clear");
-
-        foreach (GameObject objToHide in gameObjectsToHide)
+        if (hideAll)
         {
-           objToHide.SetActive(false);
+            for (int i = firstStep + 1; i <= lastStep; i++)
+            {
+                if (stepObjects[i] != null)
+                    stepObjects[i].SetActive(false);
+            }
         }
 
-        // show objects for this step
-        GameObject[] gameObjectsToShow;
-
-        gameObjectsToShow = GameObject.FindGameObjectsWithTag("Step" + currentStep.ToString());
-
-        foreach (GameObject objToShow in gameObjectsToShow)
+        for (int i = firstStep + 1; i <= currentStep; i++)
         {
-            objToShow.SetActive(true);
+            if (!((currentStep == exclusiveStep) && (i > firstStep) && (i < exclusiveStep)))
+            {
+                if (stepObjects[i] != null)
+                    stepObjects[i].SetActive(true);
+            }
         }
 
         // start narration for this step
