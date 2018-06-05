@@ -5,7 +5,8 @@
 - No dependencies yet
 
 ## Next
-- [ ] Play start of narration
+- [ ] Instantiate the 165 CO2 cubes one-by-one at an accelerating pace
+- [ ] Narration for Steps 3 through 5
 - [ ] Investigate rendering perfomance issues with 166 transparent cubes
 - [ ] 
 
@@ -22,5 +23,5 @@
 - [x] "reset", "restart", "start", "quit" voice commands
 - [x] Nitrogen, oxygen, argon boxes
 - [x] CO2 165 cubes from burning 1 gallon of gasoline (Try 4 x 4 x 10, + 5)
-
+- [x] Play start of narration (Steps 1 and 2)
 

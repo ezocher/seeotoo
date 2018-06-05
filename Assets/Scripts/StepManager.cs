@@ -19,11 +19,17 @@ public class StepManager : MonoBehaviour
 
     private GameObject[] stepObjects;
 
+    public AudioClip[] stepNarrations;
+    public float stepNarrationsVolumeScale = 0.75f;
+    AudioSource audioSource;
+
     // NOTE: Step1 is always showing, never hide it
 
     // Awake Runs before all Start() methods
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+
         // Save and hide game objects for all steps (except Step 1)
         stepObjects = new GameObject[lastStep + 1];
 
@@ -100,8 +106,8 @@ public class StepManager : MonoBehaviour
         }
 
         // start narration for this step
-        // *TBD*
-
+        if ((stepNarrations.Length >= currentStep) && (stepNarrations[currentStep-1] != null))
+            audioSource.PlayOneShot(stepNarrations[currentStep - 1], stepNarrationsVolumeScale);
     }
 
     /*
