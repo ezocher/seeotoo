@@ -11,52 +11,44 @@ public class SpeechManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        keywords.Add("Reset world", () =>
+        keywords.Add("Forward", () =>
         {
-            // Call the OnReset method on every descendant object.
+            this.BroadcastMessage("OnStepForward");
+        });
+
+        keywords.Add("Next", () =>
+        {
+            this.BroadcastMessage("OnStepForward");
+        });
+
+        keywords.Add("Back", () =>
+        {
+            this.BroadcastMessage("OnStepBack");
+        });
+
+        keywords.Add("Previous", () =>
+        {
+            this.BroadcastMessage("OnStepBack");
+        });
+
+        keywords.Add("Reset", () =>
+        {
+            this.BroadcastMessage("OnRestart");
+        });
+
+        keywords.Add("Restart", () =>
+        {
+            this.BroadcastMessage("OnRestart");
+        });
+
+        keywords.Add("Start", () =>
+        {
             this.BroadcastMessage("OnReset");
         });
 
-        // EZ
-        keywords.Add("Freeze", () =>
-        {
-            // Call the OnFreeze method on every descendant object.
-            this.BroadcastMessage("OnFreeze");
-        });
-
-        // EZ
-        keywords.Add("Go", () =>
-        {
-            // Call the OnGo method on every descendant object.
-            this.BroadcastMessage("OnGo");
-        });
-
-        // EZ
-        keywords.Add("Show Mesh", () =>
-        {
-            SpatialMapping.Instance.DrawVisualMeshes = true;
-        });
-
-        // EZ
-        keywords.Add("Hide Mesh", () =>
-        {
-            SpatialMapping.Instance.DrawVisualMeshes = false;
-        });
-
-        // EZ
         keywords.Add("Quit", () =>
         {
-            Application.Quit();
-        });
-
-        keywords.Add("Drop Sphere", () =>
-        {
-            var focusObject = GazeGestureManager.Instance.FocusedObject;
-            if (focusObject != null)
-            {
-                // Call the OnDrop method on just the focused object.
-                focusObject.SendMessage("OnDrop", SendMessageOptions.DontRequireReceiver);
-            }
+            this.BroadcastMessage("OnQuitRequested");
         });
 
         // Tell the KeywordRecognizer about our keywords.
