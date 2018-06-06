@@ -152,7 +152,9 @@ TextMesh:
   m_GameObject: {fileID: 9701016}
   m_Text: 'See O Too
 
-    <size=10>Prototype 0.02</size>'
+    <size=10>Prototype 0.002
+
+    Hello Eyeo!</size>'
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1

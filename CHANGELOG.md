@@ -5,16 +5,31 @@
 - No dependencies yet
 
 ## Next
-- [ ] Instantiate the 165 CO2 cubes one-by-one at an accelerating pace
-- [ ] Narration for Steps 3 through 5
-- [ ] Investigate rendering perfomance issues with 166 transparent cubes
+- [ ] Break existing Step 2 into three steps
+- [ ] Re-scripted and recorded narration for new Step 2-4 (full amplification)
+- [ ] Break existing Step 4 into two steps (new Steps 6 & 7)
+- [ ] Narration for Steps 5-7
+- [ ] Gas can placeholder in Step 8
+- [ ] Narration for Step 8
+- [ ] Why does title text look like shit?
+- [ ] Labels on boxes
+- [ ] Animated CO2 from 18?? to present
 - [ ] 
 
 ## Backlog
 - [ ] Remove unused assets and code that came from Origami app
-
+- [ ] Subtitles!
+- [ ] Air taps and clicker to advance
+- [ ] English / Metric setting and narration
+- [ ] Narration by Ellen Zocher
 
 # Changelog
+
+## 0.002 (June 6, 2018)
+- [x] Changed 165 cubes from burning 1 gallon of gas to one giant 165 cu. ft. cube, HoloLens is happier
+- [x] Added title screen with version
+- [x] Re-scripted and recorded narration for Step 1 (full amplification)
+- [ ] 
 
 ## 0.001 (June 5, 2018)
 - [x] Floating transparent cube (cubic foot of air) running on HoloLens
