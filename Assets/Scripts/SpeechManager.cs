@@ -21,6 +21,12 @@ public class SpeechManager : MonoBehaviour
             this.BroadcastMessage("OnStepForward");
         });
 
+        // Trying this for an Australian user
+        keywords.Add("Canbrew", () =>
+        {
+            this.BroadcastMessage("OnStepForward");
+        });
+
         keywords.Add("Back", () =>
         {
             this.BroadcastMessage("OnStepBack");
@@ -37,6 +43,12 @@ public class SpeechManager : MonoBehaviour
         });
 
         keywords.Add("Restart", () =>
+        {
+            this.BroadcastMessage("OnRestart");
+        });
+
+        // Trying this for an Australian user
+        keywords.Add("Stawt", () =>
         {
             this.BroadcastMessage("OnRestart");
         });
