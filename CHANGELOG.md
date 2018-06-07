@@ -14,7 +14,7 @@
 - [ ] Why does title text look like shit?
 - [ ] Labels on boxes
 - [ ] Animated CO2 from 18?? to present
-- [ ] 
+- [ ] Unity Timeline to replace exisitng StepManager
 
 ## Backlog
 - [ ] Remove unused assets and code that came from Origami app
@@ -24,6 +24,10 @@
 - [ ] Narration by Ellen Zocher
 
 # Changelog
+
+## 0.003 (June 7, 2018)
+- [x] Fixed voice command bugs
+- [x] Added "End of current prototype" screen
 
 ## 0.002 (June 6, 2018)
 - [x] Changed 165 cubes from burning 1 gallon of gas to one giant 165 cu. ft. cube, HoloLens is happier

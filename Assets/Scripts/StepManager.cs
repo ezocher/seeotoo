@@ -14,7 +14,7 @@ public class StepManager : MonoBehaviour
 
     // *TBD* Need to replace this with an array of tag numbers to be visible in each step
     private const int firstStep = 0;
-    private const int lastStep = 5;
+    private const int lastStep = 6;
     private const int exclusiveStep = 5;
     private int currentStep = 0;
     private int persistentStep = 1; // Always present except for Step0
@@ -58,6 +58,14 @@ public class StepManager : MonoBehaviour
         SetToCurrentStep(true);
         stepObjects[firstStep].SetActive(true);
         stepObjects[persistentStep].SetActive(false);
+    }
+
+    void OnStart()
+    {
+        if (currentStep == firstStep)
+            OnStepForward();
+        else
+            OnRestart();
     }
 
     void OnStepForward()

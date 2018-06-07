@@ -22,7 +22,7 @@ public class SpeechManager : MonoBehaviour
         });
 
         // Trying this for an Australian user
-        keywords.Add("Canbrew", () =>
+        keywords.Add("Canbruh", () =>
         {
             this.BroadcastMessage("OnStepForward");
         });
@@ -50,12 +50,12 @@ public class SpeechManager : MonoBehaviour
         // Trying this for an Australian user
         keywords.Add("Stawt", () =>
         {
-            this.BroadcastMessage("OnRestart");
+            this.BroadcastMessage("OnStart");
         });
 
         keywords.Add("Start", () =>
         {
-            this.BroadcastMessage("OnRestart");
+            this.BroadcastMessage("OnStart");
         });
 
         keywords.Add("Quit", () =>
