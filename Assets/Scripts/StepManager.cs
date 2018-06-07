@@ -122,6 +122,16 @@ public class StepManager : MonoBehaviour
             }
         }
 
+        if (currentStep == lastStep)
+        // Hide everything except last step
+        {
+            for (int i = firstStep; i < lastStep; i++)
+            {
+                   if (stepObjects[i] != null)
+                        stepObjects[i].SetActive(false);
+            }
+        }
+
         // start narration for this step
         if (((stepNarrations.Length - 1) >= currentStep) && (stepNarrations[currentStep] != null))
             audioSource.PlayOneShot(stepNarrations[currentStep], stepNarrationsVolumeScale);
