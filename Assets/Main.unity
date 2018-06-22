@@ -686,10 +686,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stepNarrations:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 87ac0770c271eb642a8f4e5e2d6f2704, type: 3}
   - {fileID: 8300000, guid: 528c0e2235b713345b6ad4b7321bfe3e, type: 3}
   - {fileID: 8300000, guid: 5c8fbe471c87e6e4b93ac7cd985fe8f1, type: 3}
-  stepNarrationsVolumeScale: 1
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 87ac0770c271eb642a8f4e5e2d6f2704, type: 3}
+  stepNarrationsVolumeScale:
+  - 0.5
+  - 1
+  - 1
+  - 0
+  - 0
+  - 0
+  - 0.5
+  stepNarrationsLoop: 01000000000001
 --- !u!4 &802589356
 Transform:
   m_ObjectHideFlags: 0
