@@ -22,7 +22,8 @@ public class StepManager : MonoBehaviour
     private GameObject[] stepObjects;
 
     public AudioClip[] stepNarrations;
-    public float stepNarrationsVolumeScale = 1.0f;
+    public float[] stepNarrationsVolumeScale;
+    public bool[] stepNarrationsLoop;
     AudioSource audioSource;
 
     // NOTE: Step1 is always showing, never hide it
@@ -132,9 +133,40 @@ public class StepManager : MonoBehaviour
             }
         }
 
-        // start narration for this step
+        // start narration or music for this step
+        PlayStepNarration();
+
+        
+
+    }
+
+    // start narration or music for this step
+    private void PlayStepNarration()
+    {
+        float volumeScale;
+        const float defaultVolumeScale = 1.0f;
+        bool loop;
+        bool defaultLoop = false;
+
+
         if (((stepNarrations.Length - 1) >= currentStep) && (stepNarrations[currentStep] != null))
-            audioSource.PlayOneShot(stepNarrations[currentStep], stepNarrationsVolumeScale);
+        {
+            if ((stepNarrationsVolumeScale.Length - 1) >= currentStep)
+                volumeScale = stepNarrationsVolumeScale[currentStep];
+            else
+                volumeScale = defaultVolumeScale;
+
+            if ((stepNarrationsLoop.Length - 1) >= currentStep)
+                loop = stepNarrationsLoop[currentStep];
+            else
+                loop = defaultLoop;
+
+            audioSource.volume = volumeScale;
+            audioSource.loop = loop;
+            audioSource.clip = stepNarrations[currentStep];
+
+            audioSource.Play();
+        }
     }
 
     /*
