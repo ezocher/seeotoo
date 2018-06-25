@@ -9,7 +9,7 @@ The basic experience is a self-paced narrated, visual exploration with simple in
 
 The material and terminology is designed for middle school science students through adults and can be completed in about 10 minutes.
 
-You can check out a video capture through the HoloLens of the **current crude prototype [here](Videos/SeeOToo-HoloLensCaptureEyeoVersion.mp4).**
+You can download a video of a capture through the HoloLens of the **current crude prototype [from this page](Videos/SeeOToo-HoloLensCaptureEyeoVersion.mp4).**
 
 ## The Project
 See O Too is an open source project (MIT license) developed in Unity3D and hosted on GitHub.
