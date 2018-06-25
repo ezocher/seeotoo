@@ -1,19 +1,43 @@
 # See O Too
 
-See O Too is an augmented reality application (currently on the HoloLens), that visually and immersively shows the composition of earth's atmosphere and how human activity is changing it. Understanding the atmosphere and how rapidly we are altering it provides the foundation for understanding climate change.
+See O Too is an augmented reality application that visually and immersively teaches the fundamentals of Climate Science.
 
+![User wearing HoloLens](Storyboards/Images/user-hololens1.jpg)
 ![7 Storyboard 108 Cubes](Storyboards/Images/7-storyboard_108_cubes.jpg)
 
-*Note: This a render for the [Storyboard](Storyboards/storyboard001.md) - it's not yet live code*
+## Experience
+The basic experience is a self-paced narrated, visual exploration with simple interactivity. It is intended for museums, classrooms, or festivals and can be used with no prior exposure to AR or VR. It currently runs on the Microsoft HoloLens. The HoloLens allows the user to directly explore the room-sized 3D visualizations by moving through them and looking around them.
 
-## Storyboards
-To get an idea of what the proect is about, **check out the [first storyboard](Storyboards/storyboard001.md)** for a preliminary description and design for the first experience being prototyped.
+The material and terminology is designed for middle school science students through adults and can be completed in about 10 minutes.
 
-## Eyeo Festival 2018
-I am attending Eyeo 2018 from June 4-7 and I'll be giving informal demos of the current prototype in-between sessions and during lunch breaks. I am very interested in getting feedback from Eyeo attendees. Please message me in the Eyeo app if you're interested in a demo.
+## The Project
+See O Too is an open source project (MIT license) developed in Unity3D and hosted on GitHub.
+
+It’s being developed on a volunteer basis and is currently without external funding or partnerships.
+
+We are seeking interested collaborators, particularly artists, animators, and developers with Unity3D expertise.
+
+## Design Principles
+- Journalistic approach
+- Scientific reality, not advocacy
+- Open content methodology
+	- References published on GitHub
+    - Design decisions documented on GitHub
+- Extreme clarity about directly measured data versus projections and areas of active research
+	- Data example: Current atmospheric CO2 concentration
+	- Active research example: Greenland ice sheet melt rate
+
+## Guided Experience
+### Three Chapters
+1. Gasses and the Atmosphere
+   - This is the chapter currently being prototyped
+1. Warming and Melting
+1. Effects and Mitigation
+
+## Chapter 1 Storyboard
+To get a very rough idea of what the proect is about, **check out the [first storyboard](Storyboards/storyboard001.md)** for a preliminary description and design for the first experience being prototyped.
 
 ## Status
-This is a new project, started in May 2018. The first milestone is to get a basic experience up and running to test with a variety of users to see if AR is an understandable and compelling way to communicate this material.
+This is a new project, started in May 2018. The first milestone is to get a basic version of Chapter 1 up and running to test with a variety of users to see if AR is an understandable, usable, and compelling way to communicate this material.
 
 See the [changelog](CHANGELOG.md) for current status of the code and roadmap.
-
