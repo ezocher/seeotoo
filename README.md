@@ -2,8 +2,7 @@
 
 See O Too is an augmented reality application that visually and immersively teaches the fundamentals of Climate Science.
 
-![User wearing HoloLens](Storyboards/Images/user-hololens1.jpg)
-![7 Storyboard 108 Cubes](Storyboards/Images/7-storyboard_108_cubes.jpg)
+![User wearing HoloLens looking at atmosphere gas cubes](Storyboards/Images/user_hololens-4_gasses_from_storyboard.jpg)
 
 ## Experience
 The basic experience is a self-paced narrated, visual exploration with simple interactivity. It is intended for museums, classrooms, or festivals and can be used with no prior exposure to AR or VR. It currently runs on the Microsoft HoloLens. The HoloLens allows the user to directly explore the room-sized 3D visualizations by moving through them and looking around them.
