@@ -5,9 +5,9 @@ See O Too is an augmented reality application that visually and immersively teac
 ![User wearing HoloLens looking at atmosphere gas cubes](Storyboards/Images/user_hololens-4_gasses_from_storyboard.jpg)
 
 ## Experience
-The basic experience is a self-paced narrated, visual exploration with simple interactivity. It is intended for museums, classrooms, or festivals and can be used with no prior exposure to AR or VR. It currently runs on the Microsoft HoloLens. The HoloLens allows the user to directly explore the room-sized 3D visualizations by moving through them and looking around them.
+The core See O Too experience is a self-paced, narrated, visual exploration with simple interactivity. It is intended for museums, classrooms, or festivals and can be used with no prior exposure to AR or VR. It currently runs on the Microsoft HoloLens. The HoloLens allows the user to directly explore the room-sized 3D visualizations by moving through them and looking around them.
 
-The material and terminology is designed for middle school science students through adults and can be completed in about 10 minutes.
+The content and terminology is designed for middle school science students through adults and the experience can be completed in about 10 minutes.
 
 You can download a video of a capture through the HoloLens of the **current crude prototype [from this page](Videos/SeeOToo-HoloLensCaptureEyeoVersion.mp4).**
 
@@ -41,7 +41,7 @@ This is a new project, started in May 2018. The first milestone is to get a basi
 ## More Info
 * **[Overview presentation about the project](Storyboards/Overview_Presentation.pdf)**
 * See the **[changelog](CHANGELOG.md)** for current status of the code and roadmap.
-* **[Preliminary storyboard/script for Chapter 1](Storyboards/storyboard001.md)** *(it's out of date)*
+* **[Preliminary storyboard/script for Chapter 1](Storyboards/storyboard001.md)** *(out of date)*
 
 ## References, Data, and Methodology
 *TBD*
