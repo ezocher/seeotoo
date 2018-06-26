@@ -35,10 +35,14 @@ We are seeking interested collaborators, particularly artists, animators, or dev
 1. Warming and Melting
 1. Effects and Mitigation
 
-## Chapter 1 Storyboard
-To get a very rough idea of what the proect is about, **check out the [first storyboard](Storyboards/storyboard001.md)** for a preliminary description and design for the first experience being prototyped.
-
 ## Status
 This is a new project, started in May 2018. The first milestone is to get a basic version of Chapter 1 up and running to test with a variety of users to see if AR is an understandable, usable, and compelling way to communicate this material.
 
-See the [changelog](CHANGELOG.md) for current status of the code and roadmap.
+## More Info
+* **[Overview presentation about the project](Storyboards/Overview_Presentation.pdf)**
+* See the **[changelog](CHANGELOG.md)** for current status of the code and roadmap.
+* **[Preliminary storyboard/script for Chapter 1](Storyboards/storyboard001.md)** *(it's out of date)*
+
+## References, Data, and Methodology
+*TBD*
+
