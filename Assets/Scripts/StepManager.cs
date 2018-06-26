@@ -2,38 +2,43 @@
 using System.Collections;
 
 
-// Super hacky way to manage step transitions in the guided experience prototype
+// Super super hacky way to manage step transitions in the guided experience prototype
 
 // GameObjects for all steps are part of the main scene, step through narrative sequence by showing/hiding objects for each step
 // In Unity:
-//  Tag GameObjects with "Clear" to clear them before every step
-//  Tag GameObjects with "Step#" to have them show during that step (e.g. "Step2")
+//  Tag one GameObject with "Step#" to have it's visibility controllable at each step
+//      By convention there is a container named with the Step # where it first appears
+//      If there is only a single object for a step (e.g Title and End Screens) it can be directly tagged and doesn't need to be in a containing object
+
+// Wrapper class to make array of arrays editable in Unity inspector
+[System.Serializable]
+public class ActiveObjectsThisStep
+{
+    public bool[] isActive;
+}
 
 public class StepManager : MonoBehaviour
 {
-
-    // *TBD* Need to replace this with an array of tag numbers to be visible in each step
     private const int firstStep = 0;
-    private const int lastStep = 6;
-    private const int exclusiveStep = 5;
-    private int currentStep = 0;
-    private int persistentStep = 1; // Always present except for Step0
+    private const int lastStep = 9;
+    private int currentStep = firstStep;
 
+    // Save references to root objects for each Step for setting active/inactive
     private GameObject[] stepObjects;
 
     public AudioClip[] stepNarrations;
     public float[] stepNarrationsVolumeScale;
     public bool[] stepNarrationsLoop;
-    AudioSource audioSource;
+    public ActiveObjectsThisStep[] activeObjectsPerStep;
 
-    // NOTE: Step1 is always showing, never hide it
+    AudioSource audioSource;
 
     // Awake Runs before all Start() methods
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
 
-        // Save and hide game objects for all steps (except first step)
+        // Find, save and hide game objects for all steps (except first step)
         stepObjects = new GameObject[lastStep + 1];
 
         GameObject[] taggedObjects;
@@ -43,6 +48,7 @@ public class StepManager : MonoBehaviour
 
             if (taggedObjects.Length > 0)
             {
+                // Save _only_ the first object found with each Step# tag
                 stepObjects[i] = taggedObjects[0];
                 if (i != firstStep)
                     stepObjects[i].SetActive(false);
@@ -50,15 +56,13 @@ public class StepManager : MonoBehaviour
         }
 
         currentStep = firstStep;
-        SetToCurrentStep(false);
+        SetToCurrentStep();
     }
 
     void OnRestart()
     {
         currentStep = firstStep;
-        SetToCurrentStep(true);
-        stepObjects[firstStep].SetActive(true);
-        stepObjects[persistentStep].SetActive(false);
+        SetToCurrentStep();
     }
 
     void OnStart()
@@ -77,20 +81,18 @@ public class StepManager : MonoBehaviour
         if (currentStep > lastStep)
             OnRestart();
 
-        SetToCurrentStep(true);
+        SetToCurrentStep();
     }
 
     void OnStepBack()
     {
         currentStep--;
 
-        // Don't do anything if we're at the firstStep
+        // Don't do anything if we were already at the first Step
         if (currentStep < firstStep)
             currentStep = firstStep;
         else
-        {
-            SetToCurrentStep(true);
-        }
+            SetToCurrentStep();
     }
     
     void OnQuitRequested()
@@ -99,45 +101,18 @@ public class StepManager : MonoBehaviour
         Application.Quit();
     }
 
-    void SetToCurrentStep(bool hideAll)
+    void SetToCurrentStep()
     {
-        // Stop any audio that was previously playing
+        // Stop any audio that may still be playing from previous steps
         audioSource.Stop();
 
-        if (hideAll)
+        for (int objectIndex = firstStep; objectIndex <= lastStep; objectIndex++)
         {
-            for (int i = firstStep; i <= lastStep; i++)
-            {
-                if (i != persistentStep)
-                    if (stepObjects[i] != null)
-                        stepObjects[i].SetActive(false);
-            }
-        }
-
-        for (int i = firstStep + 1; i <= currentStep; i++)
-        {
-            if (!((currentStep == exclusiveStep) && (i > firstStep) && (i < exclusiveStep)))
-            {
-                if (stepObjects[i] != null)
-                    stepObjects[i].SetActive(true);
-            }
-        }
-
-        if (currentStep == lastStep)
-        // Hide everything except last step
-        {
-            for (int i = firstStep; i < lastStep; i++)
-            {
-                   if (stepObjects[i] != null)
-                        stepObjects[i].SetActive(false);
-            }
+            stepObjects[objectIndex].SetActive(activeObjectsPerStep[currentStep].isActive[objectIndex]);
         }
 
         // start narration or music for this step
         PlayStepNarration();
-
-        
-
     }
 
     // start narration or music for this step
@@ -145,9 +120,8 @@ public class StepManager : MonoBehaviour
     {
         float volumeScale;
         const float defaultVolumeScale = 1.0f;
-        bool loop;
         bool defaultLoop = false;
-
+        bool loop = defaultLoop;
 
         if (((stepNarrations.Length - 1) >= currentStep) && (stepNarrations[currentStep] != null))
         {

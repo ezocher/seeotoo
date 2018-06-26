@@ -11,18 +11,12 @@ public class SpeechManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        keywords.Add("Forward", () =>
+        /* keywords.Add("Forward", () =>
         {
             this.BroadcastMessage("OnStepForward");
-        });
+        }); */
 
         keywords.Add("Next", () =>
-        {
-            this.BroadcastMessage("OnStepForward");
-        });
-
-        // Trying this for an Australian user
-        keywords.Add("Canbruh", () =>
         {
             this.BroadcastMessage("OnStepForward");
         });
@@ -37,20 +31,9 @@ public class SpeechManager : MonoBehaviour
             this.BroadcastMessage("OnStepBack");
         });
 
-        keywords.Add("Reset", () =>
-        {
-            this.BroadcastMessage("OnRestart");
-        });
-
         keywords.Add("Restart", () =>
         {
             this.BroadcastMessage("OnRestart");
-        });
-
-        // Trying this for an Australian user
-        keywords.Add("Stawt", () =>
-        {
-            this.BroadcastMessage("OnStart");
         });
 
         keywords.Add("Start", () =>
