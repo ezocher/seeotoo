@@ -9,10 +9,11 @@ using System.Collections;
 //  Tag one GameObject with "Step#" to have it's visibility controllable at each step
 //      By convention there is a container named with the Step # where it first appears
 //      If there is only a single object for a step (e.g Title and End Screens) it can be directly tagged and doesn't need to be in a containing object
-
+// TBD: Rename all Step# Tags in Unity to Group#
+    
 // Wrapper class to make array of arrays editable in Unity inspector
 [System.Serializable]
-public class ActiveObjectsThisStep
+public class ActiveGroupsThisStep
 {
     public bool[] isActive;
 }
@@ -23,13 +24,16 @@ public class StepManager : MonoBehaviour
     private const int lastStep = 9;
     private int currentStep = firstStep;
 
+    private const int firstGroup = 0;
+    private const int lastGroup = 13;
+
     // Save references to root objects for each Step for setting active/inactive
-    private GameObject[] stepObjects;
+    private GameObject[] objectGroups;
 
     public AudioClip[] stepNarrations;
     public float[] stepNarrationsVolumeScale;
     public bool[] stepNarrationsLoop;
-    public ActiveObjectsThisStep[] activeObjectsPerStep;
+    public ActiveGroupsThisStep[] activeGroupsPerStep;
 
     AudioSource audioSource;
 
@@ -38,20 +42,23 @@ public class StepManager : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
 
-        // Find, save and hide game objects for all steps (except first step)
-        stepObjects = new GameObject[lastStep + 1];
+        // Find, save and hide game objects for all groups
+        objectGroups = new GameObject[lastGroup + 1];
 
         GameObject[] taggedObjects;
-        for (int i = firstStep; i <= lastStep; i++)
+        for (int i = firstGroup; i <= lastGroup; i++)
         {
             taggedObjects = GameObject.FindGameObjectsWithTag("Step" + i.ToString());
 
             if (taggedObjects.Length > 0)
             {
                 // Save _only_ the first object found with each Step# tag
-                stepObjects[i] = taggedObjects[0];
-                if (i != firstStep)
-                    stepObjects[i].SetActive(false);
+                objectGroups[i] = taggedObjects[0];
+
+                // SetToCurrentStep() should take care of this
+                /* if (i != firstStep)
+                    objectGroups[i].SetActive(false);
+                    */
             }
         }
 
@@ -106,9 +113,9 @@ public class StepManager : MonoBehaviour
         // Stop any audio that may still be playing from previous steps
         audioSource.Stop();
 
-        for (int objectIndex = firstStep; objectIndex <= lastStep; objectIndex++)
+        for (int objectIndex = firstGroup; objectIndex <= lastGroup; objectIndex++)
         {
-            stepObjects[objectIndex].SetActive(activeObjectsPerStep[currentStep].isActive[objectIndex]);
+            objectGroups[objectIndex].SetActive(activeGroupsPerStep[currentStep].isActive[objectIndex]);
         }
 
         // start narration or music for this step

@@ -15,6 +15,10 @@ TagManager:
   - Step7
   - Step8
   - Step9
+  - Step10
+  - Step11
+  - Step12
+  - Step13
   layers:
   - Default
   - TransparentFX
