@@ -140,7 +140,7 @@ Transform:
   m_LocalPosition: {x: -0.1, y: -0.16, z: 1.9}
   m_LocalScale: {x: 0.006, y: 0.006, z: 1}
   m_Children: []
-  m_Father: {fileID: 802589356}
+  m_Father: {fileID: 391276875}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!102 &9701018
@@ -150,17 +150,11 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 9701016}
-  m_Text: '<size=100>See O Too</size>
-
-    <size=60>Prototype 0.004
-
-    http://seeotoo.org/</size>
-
-
-    Say "Next" to begin'
+  m_Text: "<size=100>See O Too</size>\n\n<size=40>Prototype 0.004\nhttp://seeotoo.org/</size>\n\n<size=60>Say
+    \u201CNext\u201D to begin</size>"
   m_OffsetZ: 0
   m_CharacterSize: 1
-  m_LineSpacing: 1
+  m_LineSpacing: 0.6
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
@@ -205,6 +199,37 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &94317540
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 94317541}
+  m_Layer: 0
+  m_Name: Gasoline
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &94317541
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 94317540}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1991755307}
+  - {fileID: 238555608}
+  - {fileID: 1597713997}
+  m_Father: {fileID: 802589356}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &238555607
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,7 +239,7 @@ GameObject:
   m_Component:
   - component: {fileID: 238555608}
   m_Layer: 0
-  m_Name: Group8Container
+  m_Name: Group8-CO2moved
   m_TagString: Step8
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -231,8 +256,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1670596714}
-  m_Father: {fileID: 802589356}
-  m_RootOrder: 12
+  m_Father: {fileID: 94317541}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &325880357
 Prefab:
@@ -276,6 +301,36 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3d0fa1645b2b1a4398aca020e52925e, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &391276874
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 391276875}
+  m_Layer: 0
+  m_Name: Titles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &391276875
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 391276874}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 9701017}
+  - {fileID: 643227726}
+  m_Father: {fileID: 802589356}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &474861781
 GameObject:
   m_ObjectHideFlags: 0
@@ -285,7 +340,7 @@ GameObject:
   m_Component:
   - component: {fileID: 474861782}
   m_Layer: 0
-  m_Name: Step3Container
+  m_Name: Group3
   m_TagString: Step3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -302,8 +357,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1606081419}
-  m_Father: {fileID: 802589356}
-  m_RootOrder: 7
+  m_Father: {fileID: 1914954320}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &528365895
 GameObject:
@@ -314,7 +369,7 @@ GameObject:
   m_Component:
   - component: {fileID: 528365896}
   m_Layer: 0
-  m_Name: Step7Container
+  m_Name: Group7-IceAgeMinCO2
   m_TagString: Step7
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -331,8 +386,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 617098250}
-  m_Father: {fileID: 802589356}
-  m_RootOrder: 11
+  m_Father: {fileID: 823820737}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &528877957
 Prefab:
@@ -421,11 +476,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 553418805}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.44, y: -0.3148, z: 1.8476}
+  m_LocalPosition: {x: 0.421, y: -0.295, z: 1.8476}
   m_LocalScale: {x: 0.006, y: 0.006, z: 1}
   m_Children: []
-  m_Father: {fileID: 802589356}
-  m_RootOrder: 4
+  m_Father: {fileID: 880289022}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!102 &553418807
 TextMesh:
@@ -434,7 +489,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 553418805}
-  m_Text: <size=100>Carbon dioxide</size>
+  m_Text: <size=60>Carbon dioxide</size>
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -641,8 +696,8 @@ Transform:
   m_LocalPosition: {x: -0.1, y: -0.16, z: 1.9}
   m_LocalScale: {x: 0.006, y: 0.006, z: 1}
   m_Children: []
-  m_Father: {fileID: 802589356}
-  m_RootOrder: 15
+  m_Father: {fileID: 391276875}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!102 &643227727
 TextMesh:
@@ -651,13 +706,16 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 643227725}
-  m_Text: 'End of current prototype
+  m_Text: '<size=60>End of current prototype
 
 
-    Thanks for trying it!'
+    Thanks for trying it!</size>
+
+
+    <size=40>http://seeotoo.org/</size>'
   m_OffsetZ: 0
   m_CharacterSize: 1
-  m_LineSpacing: 1
+  m_LineSpacing: 0.7
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
@@ -711,7 +769,7 @@ GameObject:
   m_Component:
   - component: {fileID: 692251450}
   m_Layer: 0
-  m_Name: Step4Container
+  m_Name: Group4
   m_TagString: Step4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -728,8 +786,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 732121237}
-  m_Father: {fileID: 802589356}
-  m_RootOrder: 8
+  m_Father: {fileID: 1914954320}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &732121236
 Prefab:
@@ -839,7 +897,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3ffb46c93b8ab1c4190b8d69c56ad043, type: 3}
   - {fileID: 8300000, guid: 87ac0770c271eb642a8f4e5e2d6f2704, type: 3}
   stepNarrationsVolumeScale:
-  - 0.5
+  - 0.33
   - 1
   - 1
   - 1
@@ -849,7 +907,7 @@ MonoBehaviour:
   - 1
   - 1
   - 1
-  - 0.5
+  - 0.33
   stepNarrationsLoop: 0100000000000000000001
   activeGroupsPerStep:
   - isActive: 01000000000000000000000000000000
@@ -858,11 +916,12 @@ MonoBehaviour:
   - isActive: 00010101000000000000000100000000
   - isActive: 00010101010000000000000001000000
   - isActive: 00010101010100000000000000010000
-  - isActive: 00010101010101000000000000010000
-  - isActive: 00010101010101010000000000010000
+  - isActive: 00010000000000000100000000000000
   - isActive: 00010000000000000100000000000001
-  - isActive: 00010000000000000100000000000100
+  - isActive: 00010000000000000100000000000101
+  - isActive: 00010000000001010100000000000000
   - isActive: 00000000000000000001000000000000
+  spatialMappingEnabled: 0000000000000000010000
 --- !u!4 &802589356
 Transform:
   m_ObjectHideFlags: 0
@@ -873,22 +932,12 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 9701017}
-  - {fileID: 1603735973}
-  - {fileID: 1113708921}
-  - {fileID: 1451897740}
-  - {fileID: 553418806}
+  - {fileID: 391276875}
   - {fileID: 1571268322}
-  - {fileID: 1241634676}
-  - {fileID: 474861782}
-  - {fileID: 692251450}
-  - {fileID: 1100806768}
-  - {fileID: 1903762764}
-  - {fileID: 528365896}
-  - {fileID: 238555608}
-  - {fileID: 1597713997}
-  - {fileID: 1991755307}
-  - {fileID: 643227726}
+  - {fileID: 1914954320}
+  - {fileID: 880289022}
+  - {fileID: 94317541}
+  - {fileID: 823820737}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -972,6 +1021,68 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!1 &823820736
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 823820737}
+  m_Layer: 0
+  m_Name: HistoricCO2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &823820737
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 823820736}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.54, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1903762764}
+  - {fileID: 528365896}
+  m_Father: {fileID: 802589356}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &880289021
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 880289022}
+  m_Layer: 0
+  m_Name: GasLabels
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &880289022
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 880289021}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1603735973}
+  - {fileID: 1113708921}
+  - {fileID: 1451897740}
+  - {fileID: 553418806}
+  m_Father: {fileID: 802589356}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &989435604
 GameObject:
   m_ObjectHideFlags: 0
@@ -1267,7 +1378,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1100806768}
   m_Layer: 0
-  m_Name: Step5Container
+  m_Name: Group5
   m_TagString: Step5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1284,8 +1395,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1532961332}
-  m_Father: {fileID: 802589356}
-  m_RootOrder: 9
+  m_Father: {fileID: 1914954320}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1113708920
 GameObject:
@@ -1311,11 +1422,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1113708920}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.2481, y: 0.01, z: 1.8476}
+  m_LocalPosition: {x: 0.2481, y: 0.005, z: 1.8476}
   m_LocalScale: {x: 0.006, y: 0.006, z: 1}
   m_Children: []
-  m_Father: {fileID: 802589356}
-  m_RootOrder: 2
+  m_Father: {fileID: 880289022}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!102 &1113708922
 TextMesh:
@@ -1324,7 +1435,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1113708920}
-  m_Text: <size=100>Oxygen</size>
+  m_Text: <size=60>Oxygen</size>
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -1436,7 +1547,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1241634676}
   m_Layer: 0
-  m_Name: Step2Container
+  m_Name: Group2
   m_TagString: Step2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1453,8 +1564,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1211550411}
-  m_Father: {fileID: 802589356}
-  m_RootOrder: 6
+  m_Father: {fileID: 1914954320}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1451897739
 GameObject:
@@ -1480,11 +1591,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1451897739}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.365, y: 0.01, z: 1.8476}
+  m_LocalPosition: {x: 0.365, y: 0.005, z: 1.8476}
   m_LocalScale: {x: 0.006, y: 0.006, z: 1}
   m_Children: []
-  m_Father: {fileID: 802589356}
-  m_RootOrder: 3
+  m_Father: {fileID: 880289022}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!102 &1451897741
 TextMesh:
@@ -1493,7 +1604,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1451897739}
-  m_Text: <size=100>Argon</size>
+  m_Text: <size=60>Argon</size>
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -1550,7 +1661,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4066291889058310, guid: 6df651047a22dc34893b25c5105eaeaf, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.45
+      value: 0.43
       objectReference: {fileID: 0}
     - target: {fileID: 4066291889058310, guid: 6df651047a22dc34893b25c5105eaeaf, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1682,7 +1793,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1571268322}
   m_Layer: 0
-  m_Name: Step1Container
+  m_Name: Group1-Air
   m_TagString: Step1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1700,7 +1811,7 @@ Transform:
   m_Children:
   - {fileID: 1941491589}
   m_Father: {fileID: 802589356}
-  m_RootOrder: 5
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1597713996
 GameObject:
@@ -1711,7 +1822,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1597713997}
   m_Layer: 0
-  m_Name: Group14Container
+  m_Name: Group14-165cuftCO2
   m_TagString: Step14
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1728,8 +1839,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 528877958}
-  m_Father: {fileID: 802589356}
-  m_RootOrder: 13
+  m_Father: {fileID: 94317541}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1603735972
 GameObject:
@@ -1755,11 +1866,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1603735972}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.07, y: 0.01, z: 1.8476}
+  m_LocalPosition: {x: -0.049, y: 0.005, z: 1.8476}
   m_LocalScale: {x: 0.006, y: 0.006, z: 1}
   m_Children: []
-  m_Father: {fileID: 802589356}
-  m_RootOrder: 1
+  m_Father: {fileID: 880289022}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!102 &1603735974
 TextMesh:
@@ -1768,12 +1879,12 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1603735972}
-  m_Text: <size=100>Nitrogen</size>
+  m_Text: <size=60->Nitrogen</size>
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
-  m_Anchor: 7
-  m_Alignment: 1
+  m_Anchor: 6
+  m_Alignment: 0
   m_TabSize: 4
   m_FontSize: 0
   m_FontStyle: 0
@@ -2020,7 +2131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1903762764}
   m_Layer: 0
-  m_Name: Step6Container
+  m_Name: Group6-PeakPreIndCO2
   m_TagString: Step6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2037,8 +2148,40 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1032998391}
+  m_Father: {fileID: 823820737}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1914954319
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1914954320}
+  m_Layer: 0
+  m_Name: FourGasses
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1914954320
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1914954319}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1241634676}
+  - {fileID: 474861782}
+  - {fileID: 692251450}
+  - {fileID: 1100806768}
   m_Father: {fileID: 802589356}
-  m_RootOrder: 10
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1941491588
 Prefab:
@@ -2109,7 +2252,7 @@ GameObject:
   - component: {fileID: 1991755307}
   - component: {fileID: 1991755308}
   m_Layer: 0
-  m_Name: gascan
+  m_Name: Group15-gascan
   m_TagString: Step15
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2121,13 +2264,13 @@ Transform:
   m_PrefabParentObject: {fileID: 400008, guid: 95af6efe506d90246bc605f4611c40fa, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1991755306}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.8008, y: -0.1502, z: 1.0962}
   m_LocalScale: {x: 1.6078, y: 1.6078, z: 1.6078}
   m_Children:
   - {fileID: 989435605}
-  m_Father: {fileID: 802589356}
-  m_RootOrder: 14
+  m_Father: {fileID: 94317541}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!111 &1991755308
 Animation:
@@ -2141,6 +2284,6 @@ Animation:
   m_Animation: {fileID: 0}
   m_Animations: []
   m_WrapMode: 0
-  m_PlayAutomatically: 1
+  m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0

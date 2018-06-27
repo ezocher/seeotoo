@@ -11,11 +11,11 @@ These are the current Steps in the experience, in order.
 2. Nitrogen
 3. Oxygen
 4. Argon
-4. Carbon Dioxide - present level of 407 ppm
-5. Carbon Dioxide - highest concentration for one million years prior to industrialization - 280 ppm
-6. Carbon Dioxide - average level at depths of last 8 ice ages (800,000 years) - 185 ppm and 9 degrees colder than interglacial periods
-7. One Gallon of gasoline
-8. 165 cu ft of CO2
+4. Carbon Dioxide (present level of 407 ppm)
+6. CO2 adjacent to Air cube, how can we change the atmosphere?
+7. Gallon gas can
+8. Burning the gallon of gas yields 165 cu ft of CO2
+9. Historic CO2 (*TBD - currently just showing pre-industrial and ice age CO2 bars*)
 10. End Titles
 
 ## Chapter 1 Object Groups
@@ -30,7 +30,7 @@ These are the current ObjectGroups in the experience. These are listed by Object
 5. CO2 box @ 407
 6. CO2 box @ 280
 7. CO2 box @ 185
-8. One gallon of gasoline
+8. CO2 box @ 407, adjacent to Air cube
 9. End titles
 10. Nitrogen text
 11. Oxygen text

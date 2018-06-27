@@ -28,7 +28,7 @@ public class StepManager : MonoBehaviour
     private int currentStep = firstStep;
 
     private const int firstGroup = 0;
-    private const int lastGroup = 14;
+    private const int lastGroup = 15;
 
     // Save references to root objects for each Step for setting active/inactive
     private GameObject[] objectGroups;
@@ -37,6 +37,7 @@ public class StepManager : MonoBehaviour
     public float[] stepNarrationsVolumeScale;
     public bool[] stepNarrationsLoop;
     public ActiveGroupsThisStep[] activeGroupsPerStep;
+    public bool[] spatialMappingEnabled;
 
     AudioSource audioSource;
 
