@@ -897,7 +897,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3ffb46c93b8ab1c4190b8d69c56ad043, type: 3}
   - {fileID: 8300000, guid: 87ac0770c271eb642a8f4e5e2d6f2704, type: 3}
   stepNarrationsVolumeScale:
-  - 0.6
+  - 0.33
   - 1
   - 1
   - 1
