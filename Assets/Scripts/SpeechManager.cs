@@ -26,20 +26,24 @@ public class SpeechManager : MonoBehaviour
             this.BroadcastMessage("OnStepBack");
         });
 
+        /*
         keywords.Add("Previous", () =>
         {
             this.BroadcastMessage("OnStepBack");
         });
+        */
 
         keywords.Add("Restart", () =>
         {
             this.BroadcastMessage("OnRestart");
         });
 
+        /*
         keywords.Add("Start", () =>
         {
             this.BroadcastMessage("OnStart");
         });
+        */
 
         keywords.Add("Quit", () =>
         {

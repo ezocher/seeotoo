@@ -3,31 +3,28 @@ using UnityEngine.XR.WSA.Input;
 
 public class GazeGestureManager : MonoBehaviour
 {
-    public static GazeGestureManager Instance { get; private set; }
+    // public static GazeGestureManager Instance { get; private set; }
 
     // Represents the hologram that is currently being gazed at.
-    public GameObject FocusedObject { get; private set; }
+    // public GameObject FocusedObject { get; private set; }
 
     GestureRecognizer recognizer;
 
     // Use this for initialization
     void Awake()
     {
-        Instance = this;
+        // Instance = this;
 
-        // Set up a GestureRecognizer to detect Select gestures.
+        // Set up a GestureRecognizer to detect air taps
         recognizer = new GestureRecognizer();
         recognizer.Tapped += (args) =>
         {
-            // Send an OnSelect message to the focused object and its ancestors.
-            if (FocusedObject != null)
-            {
-                FocusedObject.SendMessageUpwards("OnSelect", SendMessageOptions.DontRequireReceiver);
-            }
+            this.BroadcastMessage("OnStepForward");
         };
         recognizer.StartCapturingGestures();
     }
 
+    /*
     // Update is called once per frame
     void Update()
     {
@@ -59,4 +56,5 @@ public class GazeGestureManager : MonoBehaviour
             recognizer.StartCapturingGestures();
         }
     }
+    */
 }

@@ -151,7 +151,7 @@ TextMesh:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 9701016}
   m_Text: "<size=100>See O Too</size>\n\n<size=40>Prototype 0.004\nhttp://seeotoo.org/</size>\n\n<size=60>Say
-    \u201CNext\u201D to begin</size>"
+    \u201CNext\u201D or Air tap to begin</size>"
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 0.6
@@ -855,6 +855,7 @@ GameObject:
   - component: {fileID: 802589354}
   - component: {fileID: 802589355}
   - component: {fileID: 802589357}
+  - component: {fileID: 802589358}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -1021,6 +1022,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &802589358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 802589353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd96c9e2676dd6d4ab96decec5790c16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &823820736
 GameObject:
   m_ObjectHideFlags: 0
