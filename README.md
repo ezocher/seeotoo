@@ -9,7 +9,7 @@ The core See O Too experience is a self-paced, narrated, visual exploration with
 
 The content and terminology is designed for middle school science students through adults and the experience can be completed in about 10 minutes.
 
-You can download a video of a capture through the HoloLens of the **current crude prototype [from this page](Videos/SeeOToo-HoloLensCaptureV004).**
+You can download a video of a capture through the HoloLens of the **current crude prototype [from this page](Videos/SeeOToo-HoloLensCaptureV004.mp4).**
 
 ## The Project
 See O Too is an open source project (MIT license) developed in Unity3D and hosted on GitHub.
