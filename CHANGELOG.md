@@ -5,23 +5,29 @@
 - No dependencies yet
 
 ## Next
-- [ ] Air taps and clicker to advance
-- [ ] Break existing Step 2 into three steps
-- [ ] Re-scripted and recorded narration for new Step 2-4 (full amplification)
-- [ ] Break existing Step 4 into two steps (new Steps 6 & 7)
-- [ ] Narration for Steps 5-7
-- [ ] Gas can placeholder in Step 8
-- [ ] Labels on boxes
+* Switched to managing backlog with GitHub issues
+  * Unfinished items below need to be migrated to Issues
 - [ ] Animated CO2 from 18?? to present
 - [ ] Unity Timeline to replace exisitng StepManager
 
 ## Backlog
+- [ ] HoloLens clicker support
 - [ ] Remove unused assets and code that came from Origami app
 - [ ] Subtitles!
 - [ ] English / Metric setting and narration
-- [ ] Narration by Ellen Zocher
+
 
 # Changelog
+
+## 0.004
+- [x] Air taps to advance
+- [x] Gas can in Step 8
+- [x] Break existing Step 2 into three steps
+- [x] Re-scripted and recorded narration for new Step 2-4 (full amplification)
+- [x] Break existing Step 4 into two steps (new Steps 6 & 7)
+- [x] Narration for Steps 5-7
+- [x] Narration by Ellen Zocher (partial)
+- [x] Gas labels on boxes
 
 ## 0.003 (June 7, 2018)
 - [x] Fixed voice command bugs
