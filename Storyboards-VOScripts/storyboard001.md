@@ -3,7 +3,7 @@
 
 ***This is badly out of date - see [Issue #4](https://github.com/ezocher/seeotoo/issues/4)***
 
-***Please download the video [from this page](Videos/SeeOToo-HoloLensCaptureV004.mp4) to get a more current overview of the experience***
+***Please download the video [from this page](https://github.com/ezocher/seeotoo/blob/master/Videos/SeeOToo-HoloLensCaptureV004.mp4) to get a more current overview of the experience***
 
 
 The first prototype of See O Too will implement a small portion of the start of the guided (non-interactive) experience. Future versions will have a guided mode and an interactive mode and have ways to switch between them.
