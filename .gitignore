@@ -28,6 +28,9 @@ ExportedObj/
 # Windows symlinks
 *.lnk
 
+# Solution file for markdown and text documents
+docs.sln
+
 # Unity3D generated files for HoloLens
 [Aa]pp/
 
