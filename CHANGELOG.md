@@ -1,6 +1,6 @@
 # Roadmap
 
-- Built with Unity 2017.3.1f1
+- Built with Unity 2017.4.8f1
 - Unity project using some components and code imported from Microsoft Holographic Academy Holograms-101 Origami app
 - No dependencies yet
 
@@ -18,6 +18,9 @@
 
 
 # Changelog
+
+## no version number (ESVR Meetup - 8/9/18)
+- [x] New narration from recording session with @cschormann
 
 ## 0.004
 - [x] Air taps to advance

@@ -48,3 +48,4 @@ This is a new project, started in May 2018. The first milestone is to get a basi
 
 ## Thanks and Acknowledgements
 * Thanks to the people I met at the **[2018 Eyeo Festival](http://eyeofestival.com/)** and the **[Code+Climate Summit](http://eyeofestival.com/summit)** who bravely tried out the very first prototypes and gave me great feedback, ideas, and encouragement.
+* Thanks to @cschormann for the excellent help with re-recording and engineering the narration and for his great advice and recommendations about how to get set up to properly record and engineer voice-overs!
