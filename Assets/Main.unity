@@ -891,10 +891,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 020243a4ba9c39b40960b63c4a99ce88, type: 3}
   - {fileID: 8300000, guid: ebc60a650983d854ea18600fe3e68ea7, type: 3}
   - {fileID: 8300000, guid: 9375284beb8a71c47aac545f21ffeb2f, type: 3}
-  - {fileID: 8300000, guid: 2261d4d8fe64a2f4a8b7cc6ad67a926b, type: 3}
-  - {fileID: 8300000, guid: de9a2ae68c700274fad3bd55517bb34f, type: 3}
-  - {fileID: 8300000, guid: f45ed80c338a1d94584fdf1b9737158d, type: 3}
-  - {fileID: 8300000, guid: c33a03e31b9d20746b22df1d5aa2670f, type: 3}
+  - {fileID: 8300000, guid: 535b67b185e87a24e8b077be94a120e8, type: 3}
+  - {fileID: 8300000, guid: 9da0274373ec8bb469357a2b7475ff93, type: 3}
+  - {fileID: 8300000, guid: 7b7a1b474a8c1b2419b218fea1a1b9b3, type: 3}
+  - {fileID: 8300000, guid: 106db493632a8764bb5a35a6ad89a985, type: 3}
   - {fileID: 8300000, guid: 3ffb46c93b8ab1c4190b8d69c56ad043, type: 3}
   - {fileID: 8300000, guid: 87ac0770c271eb642a8f4e5e2d6f2704, type: 3}
   stepNarrationsVolumeScale:

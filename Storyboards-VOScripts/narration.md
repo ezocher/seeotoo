@@ -21,7 +21,7 @@ Argon, a gas which undergoes almost no chemical reactions, makes up almost 1% of
 
 Together these three gasses make up over 99% of the atmosphere.
 
-### Step 5 - Carbon Dioxide today
+### Step 5 - Carbon Dioxide today (40.5 sec.)
 Now we've come to Carbon Dioxide, which is the molecule CO2. The purple box contains the current amount of CO2 that's in one cubic foot of air. 
 
 Carbon dioxide is used by all plants, as it's a necessary ingredient for photosynthesis.
@@ -37,19 +37,19 @@ This tiny concentration of CO2 is enough to keep the earth from being an ice pla
 
 Unfortuantely, even small changes in this amount can warm or cool the entire atmosphere.
 
-If we think about Earth's atmosphere, it seems really big, so how can humans be changing it?
+If we think about Earth's atmosphere, it seems really large, so how can humans be changing it?
 
 ### Step 7 - One gallon gas can
 Here's one example: this is one gallon of gasoline and it contains about 1 pound of hydrogen and about 5.3 pounds of carbon.
 
-It gets burned with oxygen from the air and primarily creates water vapor (H2O) from the hydrogen and carbon dioxide (CO2) from the carbon.
+It gets burned with oxygen from the air and primarily creates water vapor from the hydrogen and carbon dioxide from the carbon.
 
 You should take a step back before saying "Next" or Air tapping.
 
 ### Step 8 - 165 cu. ft. of CO2
 Burning this one gallon of gasoline produces 18.9 pounds of carbon dioxide gas. This is enough gas to completely fill the giant purple cube with 165 cubic feet of CO2.
 
-This amount of carbon dioxide is enough to double the current CO2 concentration in 406,000 cubic feet of air, which is the volume of a large school gymnasium.
+This amount of carbon dioxide is also enough to double the current CO2 concentration in 406,000 cubic feet of air, which is the volume of a large school gymnasium.
 
 Burning fossil fuels is one of the primary ways in which we're changing our planet's atmosphere.
 
