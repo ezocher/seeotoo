@@ -24,11 +24,11 @@ public class StepManager : MonoBehaviour
     // TBD: Derive lastStep and lastGroup from the lengths of the appropriate arrays
     // TBD: Verify at Start() that all the arrays are the correct length
     private const int firstStep = 0;
-    private const int lastStep = 10;
+    private const int lastStep = 11;
     private int currentStep = firstStep;
 
     private const int firstGroup = 0;
-    private const int lastGroup = 15;
+    private const int lastGroup = 16;
 
     // Save references to root objects for each Step for setting active/inactive
     private GameObject[] objectGroups;

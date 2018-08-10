@@ -19,8 +19,10 @@
 
 # Changelog
 
-## no version number (ESVR Meetup - 8/9/18)
+## 0.005 (ESVR Meetup - August 9, 2018)
 - [x] New narration from recording session with @cschormann
+- [x] Split step 9 into steps 9 and 10
+- [x] Added ppm labels to CO2 bars in historical comparisons
 
 ## 0.004
 - [x] Air taps to advance
@@ -32,17 +34,17 @@
 - [x] Narration by Ellen Zocher (partial)
 - [x] Gas labels on boxes
 
-## 0.003 (June 7, 2018)
+## 0.003 (Eyeo Festival 2018 - June 7, 2018)
 - [x] Fixed voice command bugs
 - [x] Added "End of current prototype" screen
 - [x] Why does title text look like shit? Because the font was imported at too small of a point size (16). Changed it to 80 pt. Fixed.
 
-## 0.002 (June 6, 2018)
+## 0.002 (Eyeo Festival 2018 - June 6, 2018)
 - [x] Changed 165 cubes from burning 1 gallon of gas to one giant 165 cu. ft. cube, HoloLens is happier
 - [x] Added title screen with version
 - [x] Re-scripted and recorded narration for Step 1 (full amplification)
 
-## 0.001 (June 5, 2018)
+## 0.001 (Eyeo Festival 2018 - June 5, 2018)
 - [x] Floating transparent cube (cubic foot of air) running on HoloLens
 - [x] Static CO2 boxes: 407, 280, 185 ppm
 - [x] "next", "previous", "forward", "back" voice commands (StepManager and show/hide objects based on Unity tags)
