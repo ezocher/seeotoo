@@ -1,5 +1,5 @@
 # Roadmap
-### **This project is currenly on hold**, please see the [README](README.md) for details.
+### This project is currenly on hold, please see the [README](README.md) for details.
 
 - Built with Unity 2017.4.8f1
 - Unity project using some components and code imported from Microsoft Holographic Academy Holograms-101 Origami app
