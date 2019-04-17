@@ -1,16 +1,21 @@
 # See O Too
 
-See O Too is an augmented reality application that visually and immersively teaches the fundamentals of Climate Science.
+See O Too is an augmented reality application that visually and immersively teaches the fundamentals of Climate Science. 
+
+### **This project is currenly on hold**, see below for details.
 
 ![User wearing HoloLens looking at atmosphere gas cubes](Storyboards-VOScripts/Images/user_hololens-4_gasses_from_storyboard.jpg)
-## Status - On Hold
-This project is currently **on hold**. Three things have happened that caused me to shelve this project for now:
+## Status: **On Hold**
+Four things have happened that caused me to shelve this project for now:
 - I received some very helpful feedback from educators who tried the app, questioning whether VR is the best way to teach this material
 - I taught a formal class (in a different subject) for the first time and started to learn about how to present material and the importance of refining and trying again when something isn’t landing with students
-- Microsoft has officially focused the HoloLens 100% on the enterprise space
+- I remembered all the feedback I've given entrepreneurs about starting with a minimum viable product and realized that an MVP of this material and my approach to presenting it should be made with coat hangers, cardboard, and some slides/videos.
+- Also, Microsoft has officially focused the HoloLens 100% on the enterprise space
 
 If I return to this project I will take a completely new approach:
-1. I will develop a one hour in-person class in the fundamentals of Climate Science using some of the same approach that I tried in See O Too. I will use physical models that I can pass arround the class to see how students react to some of the approaches that I tried in the app. I will develop some interactive exercises to engage the class more directly with the material.
+1. I will develop a one hour in-person class in the fundamentals of Climate Science using some of the same approaches that I tried in See O Too.
+   - I will use physical models that I can pass arround the class to see how students react to some of the explanations that I tried in the app.
+   - I will also develop some interactive exercises to engage the class more deeply with the material.
 2. I will deliver this class to audiences of various ages and refine the material, exercises, and approach based on their response and feedback.
 3. When I feel I have the material and the presentation in great shape I will translate the presentation, physical models, and interactive exercises into a design for a software-based experience, potentially using VR if it makes sense.
 4. Using the in-person class material and the app design, I will recruit a project team. The team will include at least a modeler, animator, and sound and music expert and hopefully additional developers. I will also solicit funding before starting development.
