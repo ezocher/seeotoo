@@ -8,7 +8,7 @@ See O Too is an augmented reality application that visually and immersively teac
 ## Status: **On Hold**
 Four things have happened that caused me to shelve this project for now:
 - I received some very helpful feedback from educators who tried the app, questioning whether VR is the best way to teach this material
-- I taught a formal class (in a different subject) for the first time and started to learn about how to present material and the importance of refining and trying again when something isn’t landing with students
+- I taught a formal class (in a different subject) for the first time and started to learn about how to present material and the importance of refining and trying again when something isn't landing with students
 - I remembered all the feedback I've given entrepreneurs about starting with a minimum viable product and realized that an MVP of this material and my approach to presenting it should be made with coat hangers, cardboard, and some slides/videos.
 - Also, Microsoft has officially focused the HoloLens 100% on the enterprise space
 
@@ -30,7 +30,7 @@ You can download a video of a capture through the HoloLens of the **current crud
 ## The Project
 See O Too is an open source project (MIT license) developed in Unity3D and hosted on GitHub.
 
-It’s being developed on a volunteer basis and is currently without external funding or partnerships.
+It's being developed on a volunteer basis and is currently without external funding or partnerships.
 
 We are seeking interested collaborators, particularly artists, animators, or developers with Unity3D expertise.
 
